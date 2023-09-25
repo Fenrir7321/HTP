@@ -9,58 +9,59 @@
 
 </head>
 <body>
-  <!-- 1 -->
-  <header class="intro">
-    <div class="intro__content">
-      <div>
+  <!-- Обёртка -->
+<header class="bg_blue">
+  <header class="wrapper">
+    <div class="begin">
         <ul class="menu">
-          <li class="menu__item_1 menu__item" href="#">Портфолио</li>
-          <li class="menu__item_2 menu__item" href="#">Обо мне</li>
-          <li class="menu__item_3 menu__item" href="#">Контакты</li>
+          <li class="menu__item"><a href="#portfolio">Портфолио</a></li>
+          <li class="menu__item"><a href="#about_me">Обо мне</a></li>
+          <li class="menu__item"><a href="#contacts">Контакты</a></li>
         </ul>
-      </div>
-        <div class="intro__text">
+        <div class="begin__text">
           <div class="header">
             <h1>Меня зовут Мохьмад</h1>
             <p class="header__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque esse, eaque officia natus voluptatibus asperiores.</p>
           </div>
         <div class="img_man">
-          <img src="man.svg">
+          <img src="image\man.svg">
         </div>
       </div>
     </div>
   </header>
+</header>
 
-  <!-- 2 -->
-  <main class="portfolio">
-    <div class="portfolio__block">
-      <div class="portfolio__text">
-        <h2>Портфолио</h2>
+  <!-- Портфолио -->
+<div id="portfolio">
+  <div class="portfolio__block">
+    <section class="portfolio__wrapper">
+      <div class="portfolio__header">Портфолио</div>
         <p class="sub_header">AI DIGITAL CORPORATE PRESENTATION TEMPLATE</p>
-        <img class="img_interier" src="interior.svg"/>
-      </div>
-      <div class="frame">
-        <div class="arrow_block">
-          <div class="arrow">
-            <img src="arrow__l.svg">
-          </div>
-          <div class="arrow">
-            <img src="arrow__r.svg">
-          </div>
+        <img class="img_interier" src="image\interior.svg"/>
+    </section>
+    <div class="frame">
+      <div class="arrow_block">
+        <div class="arrow">
+          <img src="image\arrow__l.svg">
         </div>
-        <ul class="info">
-          <li class="info__text">ux / ui design</li>
-          <li class="info__text">development</li>
-          <li class="info__text">adaptives for tablet and phone</li>
-          <li class="info__text">animation support</li>
-        </ul>
-          <button class="btn"><a>Посмотреть</a></button>
+        <div class="arrow">
+          <img src="image\arrow__r.svg">
+        </div>
       </div>
+      <ul class="portfolio_info">
+        <li class="portfolio_info__text">ux / ui design</li>
+        <li class="portfolio_info__text">development</li>
+        <li class="portfolio_info__text">adaptives for tablet and phone</li>
+        <li class="portfolio_info__text">animation support</li>
+      </ul>
+        <button class="portfolio__btn"><a>Посмотреть</a></button>
     </div>
-  </main>
+  </div>
+</div>
 
-  <!-- 3 -->
-  <div class="about_me">
+  <!-- Обо мне -->
+<section class="bg_blue">
+  <div id="about_me">
     <div class="about_me__content">
       <div class="about_me__header">
         <h3>Обо мне</h3>
@@ -72,9 +73,65 @@
         </p>
       </div>
       <div class="about_me__img">
-        <img src="man.svg">
+        <img src="image\man.svg">
       </div>
     </div>  
-  </div>  
+  </div>
+</section>
+
+  <!-- Контакты -->
+<div id="contacts">
+  <div class="question">
+    <h4>Обсудим проект?</h4>
+    <p class="contacts__text">Заполните форму обратной связи</p>
+  </div>
+  <div class="form">
+    <ul class="contacts__ul">
+      <li class="contacts__info">Ваше имя</li>
+      <li>
+        <input 
+          class="form__input" 
+          id="input-name"
+          placeholder="Мохьмад" 
+          type="text"
+        />
+      </li>
+      <li class="contacts__info">Ваше email</li>
+      <li>
+        <input
+          class="form__input"
+          id="input-email"
+          placeholder="mail@example.com"
+          type="email"
+        />
+      </li>
+      <li class="contacts__info">Ваше номер</li>
+      <li>
+        <input
+          class="form__input"
+          id="input-tel"
+          placeholder="+7(928)777-65-55"
+          type="tel"
+          maxlength="18"
+          oninput="formatPhoneNumber(this)"
+        />
+      </li>
+      <li><button class="contacts__btn">Отправить</button></li>
+      <li>
+        <p class="contacts__p">
+          Или свяжитесь со мной удобным способом связи, расположенным ниже
+        </p>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <ul class="contacts__link">
+      <li><a class="contacts__a" href="https://web.telegram.org/a/" target="_blank">TELEGRAM</a></li>
+      <li><a class="contacts__a" href="https://web.whatsapp.com/" target="_blank">WHATSAPP</a></li>
+      <li><a class="contacts__a" href="https://www.instagram.com" target="_blank">INSTAGRAM</a></li>
+      <li><a class="contacts__a" href="https://e.mail.ru" target="_blank">E-MAIL</a></li>
+    </ul>
+  </div>
+</div>
 </body>
 </html>
