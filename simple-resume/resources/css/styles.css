@@ -1,131 +1,128 @@
 * {
-  margin: 0;
-  padding: 0;
-  user-select:none;
-  font-family: inter system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    font-family: inter system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.bg_blue {
-  background-color:  #313A5F;
+.bg-blue {
+    background-color: #313A5F;
+}
+
+.container {
+    width: 1120px;
+    margin-inline: auto;
 }
 
 
 /* Обёртка */
-  .wrapper {
-    color: white;
-    margin: 0 auto;
-  }
-
-  .begin {
-    margin-left:  17%;
-    display: inline-flex;
-    flex-direction: column;
-  }
-
-  .menu {
-    margin-top: 46px;
-    margin-left: 120px;
+nav {
     display: flex;
-    list-style: none;
-    font-size: 24px;
     gap: 40px;
-  }
+    padding-top: 46px;
+}
 
-  .menu__item a {
+nav>a {
+    display: block;
+    color: #FFF;
+    font-size: 24px;
     text-decoration: none;
-    color: inherit;
-  }
-
-  h1 {
-    width: 455px;
-    font-size: 74px;
+    font-style: normal;
     font-weight: 500;
-  }
+    line-height: normal;
+}
 
-  .header__text {
-    font-size: 32px;
-    line-height: 45px;
-    width: 455px;
-    margin-top: 55px;
-    margin-bottom: 27px;
-  }
-
-  .begin__text {
-    margin-top: 95px;
-    margin-left: 120px;
+.introduction {
     display: flex;
-  }
+    justify-content: space-between;
+    gap: 100px;
+    padding: 95px 0 205px 0;
+}
 
-  .img_man {
-    margin-left: 200px;
-  }
+.introduction__header {
+    color: #FFF;
+    font-size: 74px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.introduction__text {
+    color: #FFF;
+    text-align: justify;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 136.295%;
+}
 
 
 /* Портфолио */
-  #portfolio {
+#portfolio {
     margin: 0 auto;
-  }
+}
 
-  .portfolio__block {
+.portfolio__block {
     margin-left: 17%;
     padding-top: 80px;
     display: flex;
     flex-direction: column;
-  }
+}
 
-  .portfolio__text {
+.portfolio__text {
     margin-left: 120px;
-  }
+}
 
-  .portfolio__header {
+.portfolio__header {
     margin-left: 120px;
     font-size: 74px;
-  }
+}
 
-  .sub_header-arrow-container {
+.sub_header-arrow-container {
     display: flex;
     margin-top: 50px;
     margin-left: 120px;
     gap: 500px;
-  }
+}
 
-  .sub_header {
+.sub_header {
     font-size: 32px;
     width: 500px;
-  }
+}
 
-  .arrow_block {
+.arrow_block {
     display: flex;
     gap: 10px;
-  }
+}
 
-  .arrow {
+.arrow {
     cursor: pointer;
-  }
+}
 
-  .image-portfolio-container {
+.image-portfolio-container {
     display: flex;
     margin-top: 50px;
     margin-left: 120px;
     gap: 200px;
-  }
+}
 
-  .img_interier {
+.img_interier {
     width: 500px;
-  }
+}
 
-  .portfolio_info {
+.portfolio_info {
     list-style: none;
     font-size: 24px;
-  }
+}
 
-  .portfolio_info__text {
+.portfolio_info__text {
     margin-bottom: 35px;
     font-size: 32px;
     border-bottom: solid 2px black;
-  }
+}
 
-  .portfolio__btn {
+.portfolio__btn {
     margin: 45px 0 22px 0;
     color: white;
     background-color: #313a5f;
@@ -133,76 +130,76 @@
     border-radius: 30px;
     padding: 10px 30px;
     cursor: pointer;
-  }
+}
 
 /* Обо мне */
-  #about_me {
+#about_me {
     padding-top: 60px;
     color: white;
     display: flex;
     margin: 0 auto;
-  }
+}
 
-  .about_me__content {
-    margin: 0 auto ;
+.about_me__content {
+    margin: 0 auto;
     display: inline-flex;
-  }
+}
 
-  h3 {
+h3 {
     margin-left: 120px;
     font-size: 74px;
     font-weight: 500;
-  }
+}
 
-  .about_me__text {
+.about_me__text {
     margin-left: 120px;
     font-size: 32px;
     margin-top: 100px;
     width: 515px;
     margin-bottom: 50px;
     line-height: 55px;
-  }
+}
 
-  .about_me__img {
+.about_me__img {
     margin-top: 80px;
     margin-left: 150px;
-  }
+}
 
 
 /* Контакты */
-  #contacts {
+#contacts {
     margin: 0 auto;
     text-align: center;
-  }
+}
 
-  h4 {
+h4 {
     font-size: 74px;
     font-weight: 500;
     padding-top: 60px;
-  }
+}
 
-  .contacts__text {
+.contacts__text {
     width: 250px;
     font-size: 32px;
     margin: 0 auto;
     margin-top: 50px;
-  }
+}
 
-  .contacts__ul {
+.contacts__ul {
     list-style: none;
     margin-top: 50px;
-  }
+}
 
-  .form__input {
+.form__input {
     margin: 15px;
     width: 750px;
     padding: 20px 30px;
     border-radius: 40px;
     font-size: 24px;
     text-align: left;
-  }
+}
 
-  .contacts__btn {
+.contacts__btn {
     margin: 15px;
     width: 815px;
     padding: 20px 30px;
@@ -211,34 +208,34 @@
     cursor: pointer;
     background-color: #313a5f;
     color: white;
-  }
+}
 
-  .contacts__p {
+.contacts__p {
     width: 600px;
     display: inline-flex;
     font-size: 40px;
     margin-top: 50px;
-  }
+}
 
-  .contacts__info {
+.contacts__info {
     width: 815px;
     text-align: left;
     margin: 0 auto;
     margin-top: 10px;
     font-size: 20px;
-  }
+}
 
-  .contacts__link {
+.contacts__link {
     justify-content: center;
     list-style: none;
     margin-top: 120px;
     display: flex;
     padding-bottom: 52px;
     gap: 140px;
-  }
+}
 
-  .contacts__a {
+.contacts__a {
     text-decoration: none;
     color: black;
     font-size: 32px;
-  }
+}
